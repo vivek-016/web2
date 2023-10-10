@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, h1, p, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add your CSS styles here for mobile responsiveness */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Container styles with shadow effect */
+.container {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow for the container */
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Add overflow to hide contents that extend beyond the container */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Circular-rectangle input box */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 24px); /* Adjusted input width */
+    padding: 12px;
+    font-size: 16px;
+    margin: 0 auto; /* Center the input horizontally */
+    display: block;
+    border: none; /* Remove the border */
+    border-radius: 20px; /* Circular-rectangle shape for the input box */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color */
+}
+
+/* Buttons with shading on hover */
+button[type="button"] {
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Same gradient background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for background and box-shadow */
+}
+
+button[type="button"]:hover {
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Same gradient background on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Adjusted box shadow on hover for shading */
+}
+.back-btn{
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Same gradient background */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for background and box-shadow */
+}
+
+.back-btn :hover {
+    background: linear-gradient(45deg, #3498db, #e74c3c); /* Same gradient background on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Adjusted box shadow on hover for shading */
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Box shadow for the popup */
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

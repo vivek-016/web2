@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Health Diagnosis</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Health Diagnosis</h1>
+        <p>Enter your symptoms, age, and gender to get a diagnosis and doctor's recommendation.</p>
+        <label for="symptoms">Symptoms:</label>
+        <input type="text" id="symptoms" placeholder="Enter your symptoms..." required>
+
+
+        <button type="button" id="diagnoseBtn" disabled>Diagnose</button>
+        <a href="index.html" class="back-btn"> Home</a>
+    </div>
+
+    <!-- Popup Container -->
+    <div id="popupContainer" class="popup">
+        <div class="popup-content">
+            <span id="popupClose" class="close-popup">&times;</span>
+            <h2>Diagnosis Result</h2>
+            <p id="diagnosisResult">Your diagnosis result will appear here.</p>
+            <button type="button" id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
